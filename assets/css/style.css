@@ -1,0 +1,561 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Eater&family=Kalam:wght@400;700&display=swap');
+
+/* Global styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    font-family: 'Kalam', cursive;
+    font-size: 1.25rem;
+    color: #fff;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 20ms;
+}
+
+header {
+    text-align: center;
+    margin: 20px 10px;
+}
+
+h1 {
+    font-family: 'Eater', cursive;
+}
+
+li {
+    
+    list-style: none;
+}
+
+footer {
+    text-align: center;
+    margin: 150px 20px 10px;
+    font-size: 1rem;
+    line-height: 20px;
+}
+
+.mutable .mutable-elements {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+a {
+    width: 150px;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 1.125rem;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* generic button styles */
+
+.btn {
+    width: 150px;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    background: #000;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-family: 'Kalam', cursive;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 100%;
+}
+
+.btn:hover, a:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 5px -1px;
+    transition: all 0.25s ;
+}
+
+.start-btn {
+    width: 200px;
+    height: 50px;
+    background: #fff;
+    font-family: 'Eater', cursive;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.start-btn:hover, .start-btn:focus {
+    border: 2px solid #4b4645;
+    color: #4b4645;
+    transform: translateY(-2.5px);
+    box-shadow: 0 5px 5px -1px;
+    transition: all 0.25s ;
+}
+
+/* landing area headings */
+
+#landing-header h1 {
+    font-size: 3.25rem;
+    color: #ff0000;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+#landing-header h3 {
+    font-size: 1.75rem;
+    color: #54E014;
+}
+
+/* intro section */
+
+#intro {
+    margin: 20px;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+/* landing area buttons */
+
+#landing-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#monsters-btn, #rules-btn {
+    font-size: 1rem;
+}
+
+/* monster gallery */
+
+#monster-gallery {
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+#monster-gallery h3 {
+    margin-top: 20px;
+}
+
+.monster-gallery-div {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.monster-image {
+    margin: 2.5px;
+    padding: 5px;
+}
+
+.monster-image figcaption {
+    padding: 5px;
+    font-family: 'Eater', cursive;
+    font-size: 1rem;
+}
+
+.monster-image img {
+    height: 150px;
+}
+
+/* rules section */
+
+#rules {
+    margin: 30px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 20ms;
+}
+
+#rules ul {
+    text-align: center;
+}
+
+#rules ul li:not(#rules ol li) {
+    padding: 5px;
+    margin: 5px;
+}
+
+.rules-weapon-img {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.rules-weapon-img li {
+    display: flex;
+    flex-direction: column;
+}
+
+.rules-weapon-img figure {
+    width: 100px;
+    margin: 2.5px;
+}
+
+.rules-weapon-img figcaption {
+    margin: 5px 0;
+    height: 50px;
+}
+
+.rules-weapon-img img {
+    height: 75px;
+}
+
+#rules h2:last-of-type {
+    margin-bottom: 20px;
+}
+
+/* game page headings */
+
+#game-header h2 {
+    font-family: 'Eater', cursive;
+    color: #ff0000;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+#game-header h4 {
+    color: #54E014;
+}
+
+/* game page landing section */
+
+#game-landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game-landing h3 {
+    margin: 20px;
+}
+
+#username-prompt {
+    font-size: 1rem;
+}
+
+#username {
+    border: none;
+    padding: 2.5px;
+    height: 25px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    color: #000;
+}
+
+#username:hover, #username:focus {
+    border: 2px solid #fff;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 5px -1px;
+    transition: all 0.25s ;
+}
+
+#submit-name {
+    height: 25px;
+    width: 100px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 85%;
+}
+
+#name-box {
+    height: 30px;
+}
+
+/* main game section */
+
+#game-main {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 20ms;
+}
+
+/* start, restart, next level and quit buttons */
+
+.arena-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-start {
+    width: 300px;
+    height: 50px;
+}
+
+#back-btn {
+    margin-top: 20px;
+    height: 30px;
+    display: block;
+}
+
+#next-level-btn {
+    width: 200px;
+    height: 50px;
+    background: #fff;
+    font-family: 'Eater', cursive;
+    font-size: 1.5rem;
+    color: #000;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 20ms;
+}
+
+#next-level-btn:hover, #next-level-btn:focus {
+    border: 2px solid #4b4645;
+    color: #4b4645;
+    transform: translateY(-2.5px);
+    box-shadow: 0 5px 5px -1px;
+    transition: all 0.25s ;
+}
+
+/* scores */
+
+#score-area {
+    margin: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scores {
+    font-family: 'Eater', cursive;
+    font-weight: 400;
+}
+
+#level, #attacks {
+    font-family: 'Kalam', cursive;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#level {
+    color: #54E014;
+}
+
+#attacks {
+    color: #ff0000;
+}
+
+/* game message section */
+
+#arena-message {
+    margin: 5px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.monster-name-style {
+    font-family: 'Eater', cursive;
+}
+
+.weapon-name-style {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* arena */
+
+.arena-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* active monster image */
+
+#active-monster-img {
+    margin: 10px 0;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#active-monster-img img {
+    height: 150px;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 20ms;
+}
+
+/* choose weapon button */
+
+#choose-weapon-btn {
+    width: 300px;
+    font-family: 'Eater', cursive;
+    font-size: 1.25rem;
+    background: #fff;
+    color: #000;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 20ms;
+}
+
+#choose-weapon-btn:hover, #choose-weapon-btn:focus {
+    border: 2px solid #4b4645;
+    color: #4b4645;
+    transform: translateY(-2.5px);
+    box-shadow: 0 5px 5px -1px;
+    transition: all 0.25s ;
+}
+
+/* weapons buttons */
+
+#weapons-list {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5ms;
+}
+
+.weapon {
+    margin: 2.5px 10px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation-name: roll-down;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+    animation-delay: 1ms;
+}
+
+.weapon:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 5px -1px;
+    transition: all 0.25s;
+}
+
+.weapon span {
+    width: 250px;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.weapon img {
+    width: 50px;
+    justify-self: flex-end;
+}
+
+/* win-lose image section */
+
+#win-lose-img {
+    margin: 5px 10px;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.25s;
+}
+
+#win-lose-img img {
+    width: 300px;
+}
+
+/* animations keyframes */
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+    
+}
+
+@keyframes roll-down {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 60px;
+    }
+}
+
+/* media queries */
+
+/* for screens less than 640 pixels wide */
+@media screen and (max-width: 639px) {
+    
+    /* buttons */
+    #landing-btns, .arena-btns {
+        flex-direction: column;
+    }
+
+    /* main game section */
+
+    .scores {
+        font-size: 1rem;
+    }
+
+    #level, #attacks {
+        font-size: 1.25rem;
+    }
+
+    #arena-message {
+        font-size: 1rem;
+    }
+
+    #win-lose-img img {
+        max-height: 250px;
+    }
+
+    /* footer */
+    footer {
+        font-size: 0.75rem;
+    }
+}

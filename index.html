@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Monster Hunter, a monster hunting game for kids, with monsters and weapons designed by kids">
+    <meta name="keywords" content="monster, monsters, hunt, hunter, game, kids game, childrens game">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Monster Hunter</title>
+</head>
+
+<body>
+
+    <!-- landing header -->
+    <header id="landing-header" class="header">
+        <h3>Nathan &amp; Caoimhin's</h3>
+        <h1>Monster<br>Hunter</h1>
+    </header>
+
+    <main>
+        <!-- description -->
+        <div id="intro">
+            <p>A text-and-image based online game,</p>
+            <p>inspired by the creations of two talented, imaginative, creature-obsessed boys.</p>
+            <p><em>New Monsters coming soon!</em> Click 'Meet the Monsters to see more.</p>
+        </div>
+        <!-- landing buttons -->
+        <nav id="landing-btns">
+            <button id="monsters-btn" class="btn">Meet the Monsters</button>
+            <button id="game-page-link" class="btn start-btn" role="link">Let's Hunt!</button>
+            <button id="rules-btn" class="btn">Read the Rules</button>
+        </nav>
+
+        <!-- meet the monsters section -->
+        <div id="monster-gallery" class="mutable-element" style="display: none;">
+            <!-- gallery of level 1 monsters -->
+            <h3>Level 1 (Novice) Monsters</h3>
+            <div class="monster-gallery-div"></div>
+            <!-- gallery of level 2 monsters -->
+            <h3>Level 2 (Intermediate) Monsters</h3>
+            <div class="monster-gallery-div"></div>
+            <!-- gallery of level 3 monsters -->
+            <h3>Level 3 (BOSS) Monsters</h3>
+            <div class="monster-gallery-div"></div>
+            <a href="#landing-header">Back to Top</a>
+        </div>
+
+        <!-- game rules -->
+        <div id="rules" class="mutable-element" style="display: none;">
+            <h2>Game Rules</h2>
+            <ul>
+                <li>
+                    The aim of the game is to hunt monsters with the weapons at your disposal.
+                </li>
+                <li>
+                    You will have a choice of 10 different weapons:
+                    <ol class="rules-weapon-img">
+                        <li>
+                            <figure>
+                                <figcaption>1. A Dagger</figcaption>
+                                <img src="assets/images/dagger.jpg" alt="Drawing of a dagger by Nathan">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <figcaption>2. A Sword</figcaption>
+                                <img src="assets/images/sword.jpg" alt="Drawing of a sword by Nathan">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <figcaption>3. An Axe</figcaption>
+                                <img src="assets/images/axe.jpg" alt="Drawing of an axe by Nathan">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <figcaption>4. A Bow &amp; Arrow</figcaption>
+                                <img src="assets/images/bow_arrow.jpg" alt="Drawing of a bow and arrow by Nathan">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <figcaption>5. An Ice-Tipped Arrow</figcaption>
+                                <img src="assets/images/ice_arrow.jpg" alt="Drawing of an ice-tipped arrow by Nathan">
+                            </figure>
+                        </li>
+                    </ol>
+                    <ol class="rules-weapon-img">
+                        <li>
+                            <figure>
+                                <figcaption>6. A Poisoned Blade</figcaption>
+                                <img src="assets/images/poison_blade.jpg" alt="Drawing of a poisoned blade by Nathan">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <figcaption>7. A Flame Axe</figcaption>
+                                <img src="assets/images/flame_axe.jpg" alt="Drawing of a flame axe by Nathan">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <figcaption>8. A Pistol</figcaption>
+                                <img src="assets/images/pistol.jpg" alt="Drawing of a pistol by Nathan">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <figcaption>9. A Sub-Machine Gun</figcaption>
+                                <img src="assets/images/smg.jpg" alt="Drawing of a sub-machine gun by Nathan">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <figcaption>10. A Shotgun</figcaption>
+                                <img src="assets/images/shotgun.jpg" alt="Drawing of a shotgun by Nathan">
+                            </figure>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    You may only choose one weapon at a time.
+                </li>
+                <li>
+                    There are 3 levels.
+                </li>
+                <li>
+                    One monster will be selected at random for each level.
+                </li>
+                <li>
+                    Level 1 (novice) monsters can only be affected by 3 of the 10 weapons.
+                </li>
+                <li>
+                    Level 2 (intermediate) monsters can only be affected by 2 of the 10 weapons.
+                </li>
+                <li>
+                    Level 3 (BOSS) monsters can only be affected by 1 of the 10 weapons.
+                </li>
+                <li>
+                    You will have just 3 chances to choose the right weapon!
+                </li>
+                <li>
+                    You may abandon the hunt at any time, on any level, by either quitting or finding a new monster.
+                </li>
+                <li>
+                    If you move on to a new monster, your number of available attacks will reset but your current level will not.
+                </li>
+            </ul>
+            <h2>Good Hunting!</h2>
+            <a href="#landing-header">Back to Top</a>
+        </div>
+
+    </main>
+
+    <footer id="footer">
+        <p>Monster design by Nathan McConnell-Hewitt &amp; Caoimhin McConnell-Hewitt</p>
+        <p>Weapon design by Nathan McConnell-Hewitt</p>
+        <p>&copy; 2022: all rights reserved</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
