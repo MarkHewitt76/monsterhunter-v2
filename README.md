@@ -1,5 +1,7 @@
 # Nathan & Caoimhin's MONSTER HUNTER
 
+(This is the second version of this website. The repository for the original version can be viewed [here](https://github.com/MarkHewitt76/monster-hunter)).
+
 Nathan & Caoimhin's MONSTER HUNTER is a simple, text-and-image-based online game, inspired by the imaginations of my little brothers, Nathan McConnell-Hewitt (11) and Caoimhin McConnell-Hewitt (9).
 
 Both boys, Caoimhin in particular, are fascinated by prehistoric, mythological and fantasy creatures and a favourite pastime of theirs is drawing pictures of fantastical beasts of their own invention. Nathan has even gone so far as to combine this with his interest in gaming to create a 'monster log book' with pictures, descriptions and dungeon maps, for use in the creation of various potential role-playing / board games. And it was this book, as well as Caoimhin's numerous books full of invented creatures, that inspired the creation of this website.
@@ -303,7 +305,7 @@ else {
 
 ### Existing Features
 
-This website is responsive on all device sizes and the majority of features are interactive.
+This website was designed as 'mobile-first' but is responsive on all device sizes and the majority of features are interactive.
 
 - #### Navigation: Landing Page Buttons
 
